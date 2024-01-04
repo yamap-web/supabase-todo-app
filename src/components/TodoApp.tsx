@@ -31,7 +31,7 @@ const TodoApp = () => {
 
   return (
     <section className='text-center mb-2 text-2xl font-medium'>
-      <h3>Supabase Todo App</h3>
+      <h1 className='font-bold text-3xl mb-4'>Todo App by Supabase</h1>
       <form onSubmit={(e) => handleSubmit(e)}>
         <input
           onChange={(e) => setTitle(e.target.value)}
@@ -45,6 +45,14 @@ const TodoApp = () => {
         </button>
       </form>
       <TodoList todoItems={todoItems} setTodoItems={setTodoItems} />
+      <p className='text-xs mt-4'>
+        <a href='https://youtu.be/CZlZgRo0bZ4' target="_blank" className='font-bold text-blue-600'>
+          Shin@プログラミングチュートリアル
+        </a>
+        &nbsp;様の
+        <br />
+        YouTubeより制作させていただきました。
+      </p>
     </section>
   );
 };
